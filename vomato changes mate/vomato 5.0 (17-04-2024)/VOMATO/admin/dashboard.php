@@ -49,7 +49,7 @@ else
                     <a class="navbar-brand" href="dashboard.php">
                     <span><img src="../admin/images/logo_vomato.png"  alt="vomato logo" class="dark-logo" width="50%" /></span> 
                     </a>
-                </div>
+                </div>  
 
                 <div class="navbar-collapse">
                     <ul class="navbar-nav mr-auto mt-md-0">
@@ -90,7 +90,7 @@ else
                         <li> <a href="dashboard.php"><i class="fa fa-tachometer"></i><span>Dashboard</span></a>
                         </li>
                         <li class="nav-label">Log</li>
-                        <li> <a href="all_users.php"> <span><i class="fa fa-user f-s-20 "></i></span><span>Users</span></a></li>
+                        <li> <a href="all_users.php"> <span><i class="fa fa-users"></i></span><span>Users</span></a></li>
                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Restaurant</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="all_restaurant.php">All Restaurant</a></li>
@@ -112,10 +112,10 @@ else
                             </ul>
                         </li>
                         <li> <a href="all_orders.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Orders</span></a></li>
-
+                        <li> <a href="admin-myprofile.php"><i class="fa fa-user f-s-20" aria-hidden="true"></i><span> My Profile </span></a></li>    
                     </ul>
-                </nav>
-
+                </nav>        
+          
             </div>
 
         </div>

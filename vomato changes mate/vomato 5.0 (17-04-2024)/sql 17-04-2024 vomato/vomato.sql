@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 15, 2024 at 12:15 PM
+-- Generation Time: Apr 17, 2024 at 05:51 PM
 -- Server version: 8.0.31
 -- PHP Version: 8.2.0
 
@@ -216,7 +216,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `status` int NOT NULL DEFAULT '1',
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`u_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `users`
@@ -224,7 +224,8 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`u_id`, `username`, `f_name`, `l_name`, `email`, `phone`, `password`, `address`, `status`, `date`) VALUES
 (1, 'viren', 'viren', 'patel', 'hindbharat399@gmail.com', '9265446182', '1ee951e7cdc7661e30f3d4130fdcb99f', 'B-408,  KAVERI SANGAM , SHILAJ , AHMEDABAD , 380059.', 1, '2024-02-20 05:55:12'),
-(10, 'manan', 'manan', 'vacheta', 'manan@gmail.com', '9898764510', '0e8f7019fb32c0903f2b385e2d53c0cf', 'G-202, Karmachari nagar, ghatlodia , ahmedabad , 380024.', 1, '2024-04-10 11:01:17');
+(10, 'manan', 'manan', 'vacheta', 'manan@gmail.com', '9898764510', '0e8f7019fb32c0903f2b385e2d53c0cf', 'G-202, Karmachari nagar, ghatlodia , ahmedabad , 380024.', 1, '2024-04-10 11:01:17'),
+(11, 'aanand', 'Aanand', 'Kumar', 'aanad23@gmail.com', '9265446182', '300551bf06965f6248de809c9cda1d70', 'K.K. Nagar , Ahmedabad 380051 ', 1, '2024-04-17 07:50:29');
 
 -- --------------------------------------------------------
 
