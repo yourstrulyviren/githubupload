@@ -52,7 +52,7 @@ if (isset($_POST['submit'])) {
 
     <div class="container yellow-bg">
         <div class="info">
-            <h1>Admin Panel </h1>
+            <h1>Admin Login </h1>
         </div>
     </div>
     <div class="form">
@@ -61,11 +61,11 @@ if (isset($_POST['submit'])) {
         <span style="color:green;"><?php echo $success; ?></span>
         <form class="login-form" action="index.php" method="post">
             <input type="text" placeholder="Username" name="username" />
-            <input type="password" placeholder="Password" name="password" />
+            <input type="password" placeholder="Password" name="password" />  
             <input type="submit" name="submit" value="Login" />
           
             <hr>
-           
+                        
             <p>Forgot Your Password? </p>
             <br>
             Click Here to <a href="admin/admin-change-pass.php">Recover Password</a>

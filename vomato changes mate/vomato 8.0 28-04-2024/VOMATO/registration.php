@@ -15,14 +15,14 @@ if(isset($_POST['submit'] ))
 		empty($_POST['password'])||
 		empty($_POST['cpassword']) ||
 		empty($_POST['cpassword']))
-		{
-			$message = "All fields must be Required!";
-		}
+		{   
+			$message = "All fields must be Required!";  
+		}    
 	else
 	{
 	
 	$check_username= mysqli_query($db, "SELECT username FROM users where username = '".$_POST['username']."' ");
-	$check_email = mysqli_query($db, "SELECT email FROM users where email = '".$_POST['email']."' ");
+	$check_email = mysqli_query($db, "SELECT email FROM users where email = '".$_POST['email']."' ");  
 		
 
 	
@@ -55,9 +55,9 @@ if(isset($_POST['submit'] ))
        
 	 
 	$mql = "INSERT INTO users(username,f_name,l_name,email,phone,password,address) VALUES('".$_POST['username']."','".$_POST['firstname']."','".$_POST['lastname']."','".$_POST['email']."','".$_POST['phone']."','".md5($_POST['password'])."','".$_POST['address']."')";
-	mysqli_query($db, $mql);
+	mysqli_query($db, $mql); 
 	
-		 header("refresh:0.1;url=login.php");
+		 header("refresh:0.1;url=login.php");          
     }
 	}
 
@@ -101,21 +101,24 @@ if(isset($_POST['submit'] ))
                     <a class="navbar-brand" href="index.php"> <img class="img-rounded" src="images/logo_vomato.png" alt="" width="18%"> </a>
                     <div class="collapse navbar-toggleable-md  float-lg-right" id="mainNavbarCollapse">
                         <ul class="nav navbar-nav">
-                            <li class="nav-item"> <a class="nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a> </li>
-                            <li class="nav-item"> <a class="nav-link active" href="restaurants.php">Restaurants <span class="sr-only"></span></a> </li>
-
+                            <li class="nav-item btn btn-sm btn-secondary"> <a class="nav-link active fa fa-home" href="index.php"> Home <span class="sr-only">(current)</span></a> </li>
+                            <li class="nav-item btn btn-sm btn-warning"> <a class="nav-link active fa fa-cutlery" href="restaurants.php"> Restaurants <span class="sr-only"></span></a> </li>
+                
                             <?php
 						if(empty($_SESSION["user_id"]))
 							{
-								echo '<li class="nav-item"><a href="login.php" class="nav-link active">Login</a> </li>
-							  <li class="nav-item"><a href="registration.php" class="nav-link active">Register</a> </li>';
+
+								echo ' 
+                                
+                                <li class="nav-item btn-sm btn btn-info"><a href="login.php" class="nav-link active fa fa-power-off">  Login</a> </li>' ;   
+							        
 							}
-						else
+						else      
 							{
+									        
 									
-									
-										echo  '<li class="nav-item"><a href="your_orders.php" class="nav-link active">My Orders</a> </li>';
-									echo  '<li class="nav-item"><a href="logout.php" class="nav-link active">Logout</a> </li>';
+										echo  '<li class="nav-item"><a href="your_orders.php" class="nav-link active"> My Orders</a> </li>';
+									echo  '<li class="nav-item"><a href="logout.php" class="nav-link active"> Logout</a> </li>';
 							}
 
 						?>
@@ -140,7 +143,8 @@ if(isset($_POST['submit'] ))
             <section class="contact-page inner-page">
                 <div class="container ">
                     <div class="row ">
-                        <div class="col-md-12">
+                        <div class="col-md-12"> 
+                            <h2 class="text-warning">Registration Form</h2>       
                             <div class="widget">
                                 <div class="widget-body">
                           <!-- ------------------------------------------------------------------------------

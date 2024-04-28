@@ -65,9 +65,9 @@ else
                         <div class="dropdown-menu dropdown-menu-right animated zoomIn">
                             <ul class="dropdown-user">
                                 <li><a href="logout.php"><i class="fa fa-power-off"></i> Logout</a></li>
-                                <li><a href="admin-myprofile.php"><i class="fa fa-user-secret" style="color: red;"></i> Admin Profile</a></li> 
+                                <li><a href="dashboard.php"><i class="fa fa-user-secret" style="color: red;"></i> Admin Profile</a></li> 
                                 <li><a href="admin-change-pass.php"><i class="fa fa-gear fa-spin"></i>  Change Password </a></li>   
-                            </ul>
+                            </ul>  
                         </div>
                     </li>
                     </ul>

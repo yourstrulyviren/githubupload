@@ -49,7 +49,7 @@ session_start();
    
                <hr>
 
-               <a href="index.php" class="fa fa-home backjava-btn">Home</a>
+               <a href="index.php" class="fa fa-home btn-sm backjava-btn">Home</a>
 
                <hr>
            
@@ -65,7 +65,7 @@ session_start();
                echo '<img src="uploaded_img/' . $fetch['image'] . '">';
             }
             ?>
-                
+                  
             <h3><?php echo $fetch['username']; ?></h3>  
             <h3>  <?php echo $fetch['email']; ?></h3>
             <h3> <br> <?php echo $fetch['address']; ?></h3>

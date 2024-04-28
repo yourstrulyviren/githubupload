@@ -19,7 +19,7 @@ session_start();
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animsition.min.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet"> 
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -32,23 +32,28 @@ session_start();
                 <a class="navbar-brand" href="index.php"> <img class="img-rounded" src="images/logo_vomato.png" alt="" width="18%"> </a>
                 <div class="collapse navbar-toggleable-md  float-lg-right" id="mainNavbarCollapse">
                     <ul class="nav navbar-nav">
-                        <li class="nav-item"> <a class="nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a> </li>
-                        <li class="nav-item"> <a class="nav-link active" href="restaurants.php">Restaurants <span class="sr-only"></span></a> </li>
+                 
 
                         <?php
-						if(empty($_SESSION["user_id"]))
+						if(empty($_SESSION["user_id"]))  
 							{
-								echo '<li class="nav-item"><a href="login.php" class="nav-link active">Login</a> </li>
-							  <li class="nav-item"><a href="registration.php" class="nav-link active">Register</a> </li>';
+								echo ' 
+                                <li class="nav-item btn btn-secondary btn-sm"> <a class="nav-link active fa fa-home" href="index.php">  Home <span class="sr-only">(current)</span></a> </li> 
+                        
+ 
+                                <li class="nav-item btn btn-sm btn-info"> <a href="login.php" class="nav-link active fa fa-power-off"> Login</a> </li>
+							  <li class="nav-item btn btn-sm btn-primary"><a href="registration.php" class="nav-link active fa fa-user-plus"> Register</a> </li>'; 
 							}
-						else
+						else        
 							{
-									  
-									
-										echo  '<li class="nav-item"><a href="your_orders.php" class="nav-link active">My Orders</a> </li>';
-									echo  '<li class="nav-item btn btn-sm btn-outline-danger"><a href="logout.php" class="nav-link active">Logout</a> </li>';
+						  			  
+									echo '   <li class="nav-item btn btn-outline-info btn-sm"> <a class="nav-link active fa fa-home" href="index.php"> Home <span class="sr-only">(current)</span></a> </li> '; 
+                                    
+										echo  '<li class="nav-item btn btn-outline-primary btn-sm"><a href="your_orders.php" class="nav-link active fa fa-list-alt"> My Orders</a> </li>'; 
+                                    
+									echo  '<li class="nav-item btn btn-sm btn-outline-danger btn-sm"><a href="logout.php" class="nav-link active fa fa-power-off"> Logout</a> </li>';
 							}
-
+ 
 						?>
                       <!-- ------------------------------------------------------------------------------
                     -------------------------------------------------------------------------------------

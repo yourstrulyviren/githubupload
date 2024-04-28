@@ -20,7 +20,7 @@ switch($_GET["action"])
 						{
 							foreach($_SESSION["cart_item"] as $k => $v) 
 							{
-								if($productDetails->d_id == $k) 
+								if($productDetails->d_id == $k)   
 								{
 									if(empty($_SESSION["cart_item"][$k]["quantity"])) 
 									{
@@ -32,9 +32,10 @@ switch($_GET["action"])
 						}
 						else 
 						{
-								$_SESSION["cart_item"] = $_SESSION["cart_item"] + $itemArray;
-						}
-					} 
+								$_SESSION["cart_item"] = $_SESSION["cart_item"] + $itemArray; 
+							 
+						}  
+					}        
 					else 
 					{
 						$_SESSION["cart_item"] = $itemArray;

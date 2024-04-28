@@ -156,8 +156,8 @@ td, th {
                 <a class="navbar-brand" href="index.php"> <img class="img-rounded" src="images/logo_vomato.png" alt="" width="18%"> </a>
                 <div class="collapse navbar-toggleable-md  float-lg-right" id="mainNavbarCollapse">
                     <ul class="nav navbar-nav">
-                        <li class="nav-item"> <a class="nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a> </li>
-                        <li class="nav-item"> <a class="nav-link active" href="restaurants.php">Restaurants <span class="sr-only"></span></a> </li>
+                        <li class="nav-item btn btn-outline-info btn-sm"> <a class="nav-link active fa fa-home" href="index.php">Home <span class="sr-only">(current)</span></a> </li>
+                        <li class="nav-item btn btn-outline-warning btn-sm"> <a class="nav-link active fa fa-cutlery" href="restaurants.php">Restaurants <span class="sr-only"></span></a> </li>
 
                         <?php
 						if(empty($_SESSION["user_id"]))
@@ -169,11 +169,10 @@ td, th {
 							{
 									
 									
-									echo  '<li class="nav-item"><a href="your_orders.php" class="nav-link active">My Orders</a> </li>';
-                                    echo  '<li class="nav-item"><a href="track-order.php" class="nav-link active">Track Order</a> </li>'; 
-									echo  '<li class="nav-item btn btn-outline-danger btn-sm"><a href="logout.php" class="nav-link active">Logout</a> </li>';
+                                     echo  '<li class="nav-item  btn btn-outline-success btn-sm"><a href="track-order.php" class="nav-link active  fa fa-truck">Track Order</a> </li>'; 
+									echo  '<li class="nav-item btn btn-outline-danger btn-sm"><a href="logout.php" class="nav-link active fa fa-power-off">Logout</a> </li>';
 							}
-  
+    
 						?>
 
                     </ul>

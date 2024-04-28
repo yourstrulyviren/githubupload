@@ -115,7 +115,7 @@ if (isset($_POST['update_profile'])) {
          if (isset($message)) {
             foreach ($message as $message) {
                echo '<div class="message">' . $message . '</div>';
-            }
+            }  
          }
          ?>
          <div class="flex">
