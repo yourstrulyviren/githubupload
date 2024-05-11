@@ -1,0 +1,35 @@
+
+
+For User
+        Login Details for user: 
+               Username: user@gmail.com 
+              Password: V@123
+  mob: maro 
+
+
+
+For Admin Panel
+   
+    Login Details for admin : 
+
+  Username: yourstrulyviren
+  Password: V@123
+
+other users: 
+
+
+1. birendra zala      9265757339       birendrasinh.zala@sal.edu.in           Z@123
+
+2. neha minocha       9898921094       nea.sal@edu.in                         N@123
+
+3.  Rupesh vasani     9678347122       varsani23@gmail.com                    R@123
+
+4. Bhikhalal          9365337191       bhikho@gmail.com                       B@123 
+
+5. Manjo              9365337192       manj@gmail.com                         M@123
+
+6. kittu              9643221610       kit24@gmail.com                        K@123
+   
+   
+
+
